@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>week3</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Numans&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #ffffff;
+      font-family: "Montserrat Alternates", sans-serif;
+      padding: 40px;
+    }
+
+    .back {
+      position: fixed;
+      top: 24px;
+      left: 24px;
+      font-size: 16px;
+      font-family: 'Numans', sans-serif;
+      color: #666;
+      text-decoration: none;
+    }
+
+    h1 {
+      margin-top: 60px;
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+      text-transform: lowercase;
+      color: #333;
+      line-height: 1.4;
+      white-space: nowrap; 
+    }
+
+    .circle {
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      margin-top: 100px;
+
+      background: radial-gradient(
+        circle,
+        #d7f2fb 10%,
+        #c9f1fe 40%,
+        #b8e6f6 70%,
+        #9bc8d7 90%
+      );
+
+      animation: breath 10s infinite ease-in-out;
+    }
+
+    @keyframes breath {
+      0%   { transform: scale(0.75); }
+      40%  { transform: scale(1); }  
+      60%  { transform: scale(1); }   
+      100% { transform: scale(0.75); } 
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="../collection.html" class="back">< back</a>
+
+  <h1>breathe in as the circle grows, hold, breathe out as the circle shrinks</h1>
+
+  <div class="circle"></div>
+
+</body>
+</html>
